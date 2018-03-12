@@ -7,7 +7,8 @@ public class PrintDate {
     }
 
     private void print(String text) {
-        System.out.println(text);
+        Printer consolePrinter = new ConsolePrinter();
+        consolePrinter.print(text);
     }
 
     private Date now() {
