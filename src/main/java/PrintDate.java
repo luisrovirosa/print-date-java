@@ -3,9 +3,11 @@ import java.util.Date;
 public class PrintDate {
 
     private final Printer printer;
+    private final Calendar calendar;
 
     public PrintDate(Printer printer) {
         this.printer = printer;
+        calendar = new SpainCalendar();
     }
 
     public void printCurrentDate() {
@@ -17,7 +19,6 @@ public class PrintDate {
     }
 
     private String now() {
-        Calendar calendar = new SpainCalendar();
         Date now = calendar.now();
         return now.toString();
     }
