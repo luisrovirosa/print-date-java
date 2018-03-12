@@ -15,6 +15,6 @@ public class PrintDateTest {
 
         printDate.printCurrentDate();
 
-        assertThat(printer.hasBeenCalled, is(true));
+        assertThat(printer.hasBeenCalledWith(expectedDate.toString()), is(true));
     }
 }
