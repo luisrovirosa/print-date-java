@@ -1,12 +1,16 @@
 import org.junit.Test;
 
+import static org.hamcrest.Matchers.is;
+import static org.junit.Assert.assertThat;
+
 public class PrintDateTest {
     @Test
     public void printDate() {
-        PrintDate printDate = new PrintDate(new ConsolePrinter());
+        PrinterSpy printer = new PrinterSpy();
+        PrintDate printDate = new PrintDate(printer);
 
         printDate.printCurrentDate();
 
-        // How can we test this function?
+        assertThat(printer.hasBeenCalled, is(true));
     }
 }
