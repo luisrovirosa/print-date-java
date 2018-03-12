@@ -33,4 +33,9 @@ public class PrintDateTest {
 
         verify(printer).print(expectedDate.toString());
     }
+
+    @Test
+    public void default_usage(){
+        new PrintDate().printCurrentDate();
+    }
 }

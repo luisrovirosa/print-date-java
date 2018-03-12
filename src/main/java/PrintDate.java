@@ -10,6 +10,10 @@ public class PrintDate {
         this.calendar = calendar;
     }
 
+    public PrintDate() {
+        this(new ConsolePrinter(), new SpainCalendar());
+    }
+
     public void printCurrentDate() {
         print(now());
     }
