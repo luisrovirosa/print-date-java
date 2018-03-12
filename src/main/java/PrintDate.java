@@ -4,7 +4,7 @@ public class PrintDate {
 
     private final Printer printer;
 
-    public PrintDate(ConsolePrinter printer) {
+    public PrintDate(Printer printer) {
         this.printer = printer;
     }
 
