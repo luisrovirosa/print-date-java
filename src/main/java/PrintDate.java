@@ -5,7 +5,7 @@ public class PrintDate {
     private final Printer printer;
     private final Calendar calendar;
 
-    public PrintDate(Printer printer, SpainCalendar calendar) {
+    public PrintDate(Printer printer, Calendar calendar) {
         this.printer = printer;
         this.calendar = calendar;
     }
