@@ -9,15 +9,14 @@ public class PrintDate {
     }
 
     public void printCurrentDate() {
-        Date now = now();
-        print(now.toString());
+        print(now());
     }
 
     private void print(String text) {
         printer.print(text);
     }
 
-    private Date now() {
-        return new Date();
+    private String now() {
+        return new Date().toString();
     }
 }
