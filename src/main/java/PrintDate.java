@@ -1,14 +1,20 @@
 import java.util.Date;
 
 public class PrintDate {
+
+    private final Printer printer;
+
+    public PrintDate() {
+        printer = new ConsolePrinter();
+    }
+
     public void printCurrentDate() {
         Date now = now();
         print(now.toString());
     }
 
     private void print(String text) {
-        Printer consolePrinter = new ConsolePrinter();
-        consolePrinter.print(text);
+        printer.print(text);
     }
 
     private Date now() {
