@@ -17,6 +17,8 @@ public class PrintDate {
     }
 
     private String now() {
-        return new Date().toString();
+        Calendar calendar = new SpainCalendar();
+        Date now = calendar.now();
+        return now.toString();
     }
 }
