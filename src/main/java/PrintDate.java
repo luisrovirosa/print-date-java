@@ -4,8 +4,8 @@ public class PrintDate {
 
     private final Printer printer;
 
-    public PrintDate() {
-        printer = new ConsolePrinter();
+    public PrintDate(ConsolePrinter printer) {
+        this.printer = printer;
     }
 
     public void printCurrentDate() {
