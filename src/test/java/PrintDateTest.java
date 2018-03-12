@@ -7,7 +7,7 @@ import static org.junit.Assert.assertThat;
 
 public class PrintDateTest {
     @Test
-    public void printDate() {
+    public void should_print_the_current_date() {
         PrinterSpy printer = new PrinterSpy();
         Date expectedDate = new Date();
         Calendar calendar = new CalendarStub(expectedDate);
