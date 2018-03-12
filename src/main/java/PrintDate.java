@@ -3,11 +3,11 @@ import java.util.Date;
 public class PrintDate {
     public void printCurrentDate() {
         Date now = now();
-        print(now);
+        print(now.toString());
     }
 
-    private void print(Date now) {
-        System.out.println(now);
+    private void print(String text) {
+        System.out.println(text);
     }
 
     private Date now() {
