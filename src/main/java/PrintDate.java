@@ -5,9 +5,9 @@ public class PrintDate {
     private final Printer printer;
     private final Calendar calendar;
 
-    public PrintDate(Printer printer) {
+    public PrintDate(Printer printer, SpainCalendar calendar) {
         this.printer = printer;
-        calendar = new SpainCalendar();
+        this.calendar = calendar;
     }
 
     public void printCurrentDate() {

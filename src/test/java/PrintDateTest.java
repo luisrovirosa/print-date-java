@@ -7,7 +7,7 @@ public class PrintDateTest {
     @Test
     public void printDate() {
         PrinterSpy printer = new PrinterSpy();
-        PrintDate printDate = new PrintDate(printer);
+        PrintDate printDate = new PrintDate(printer, new SpainCalendar());
 
         printDate.printCurrentDate();
 
